@@ -1,0 +1,139 @@
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: #f6f6f6;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 4px rgb(125, 125, 125);
+}
+
+#botao_pesquisar {
+    color: white;
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+
+#botao_pesquisar:hover {
+    background-color: #4dc050;
+}
+
+/* Container principal */
+.negociacao-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 1px 1px 4px rgb(174, 174, 174);
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    background-color: #4caf4f !important;
+}
+
+/* Formulários */
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #4caf4f;
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 79, 0.25);
+}
+
+/* Botões */
+.btn-success {
+    background-color: #4caf4f;
+    border-color: #4caf4f;
+}
+
+.btn-success:hover {
+    background-color: #4dc050;
+    border-color: #4dc050;
+}
+
+/* Alert container */
+.alert-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: none;
+}
+
+.alert {
+    width: 400px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .negociacao-container {
+        margin: 1rem auto;
+    }
+    
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/* Estilo para o container de negociação */
+.negociacao-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Estilo do alerta, se necessário */
+.alert-container {
+    margin: 10px;
+}
+
+/* Estilo para os botões de ação */
+.btn {
+    width: 150px;
+}
+
+/* Estilo da navbar, se não estiver sendo aplicado */
+.navbar {
+    background-color: #f8f9fa; /* Ajuste conforme necessário */
+}
+
+/* Estilo do card, se precisar de personalização */
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn btn-secondary {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  #negociacoesPendentes{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }

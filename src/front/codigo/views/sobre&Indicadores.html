@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/sobre&Indicadores.css">
+  <title>Sobre nós</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" padding: 0;margin:0;box-sizing: border-box;"  >
+    <div class="container-fluid" style="background-color: white;">
+      <a class="navbar-brand" style="color: #4caf4f; font-weight: bold; margin-left: 120px; font-size: 25px;" href="../views/paginaInicial.html"><img src="../assets/img/logo.png" alt="" style="height: 50px;width: 50px;">Recompensa Verde</a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; justify-content: flex-end;">
+           
+            <!-- Parte dinâmica para mostrar login/cadastro ou dropdown -->
+            <div id="auth-section" >
+                <!-- Se o usuário estiver logado, exibe a foto do perfil -->
+                <div class="dropdown d-none" id="user-dropdown" >
+                    <img src="../assets/img/user.png" class="rounded-circle" width="45" height="45" 
+                        id="profileDropdown" role="button" data-bs-toggle="dropdown" alt="Perfil" style="margin-right: 170px;">
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown" style="margin-right: 100px;">
+                      <li><a class="dropdown-item" href="../views/perfil.html">Perfil</a></li>
+                      <li><a class="dropdown-item" href="../views/sobre&Indicadores.html">Sobre nós</a></li>
+                      <li><a class="dropdown-item" id="exibirReciclaveis" href="../views/exibirReciclaveis.html">Comprar Recicláveis</a></li>
+                      <li><a class="dropdown-item" id="cadastrarReciclaveis" href="../views/cadastroDeReciclaveis.html">Cadastro de  Recicláveis</a></li>
+                      <li><a class="dropdown-item" id="receberSolicitacao" href="../views/recebeSolicitacao.html">Solicitação de Pedidos</a></li>
+                      <li><a class="dropdown-item" id="receberProposta" href="../views/RecebimentoProposta.html">Pedidos em negociação</a></li>
+                      <li><a class="dropdown-item" id="enviarProposta" href="../views/EnvioProposta.html">Pedidos em negociação</a></li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" id="logout" href="#">Sair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Se o usuário não estiver logado, exibe os botões -->
+                <div id="auth-buttons" style="margin-right: 100px;">
+                    <a href="../views/Login.html" class="btn btn-outline-primary me-2" style="color: #4caf4f;border: 1px solid #4caf4f; background-color: white;">Entrar</a>
+                    <a href="../views/cadastro.html" class="btn btn-primary" style="color: white;border: #4caf4f;background-color: #4caf4f;">Cadastrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <div class="wrapper">
+    <main>
+      <section class="module parallax parallax-1">
+        <h1>RECOMPENSA VERDE</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>QUAL O NOSSO PROPÓSITO?</h2>
+          <p>&nbsp;&nbsp;&nbsp;O propósito do <strong>Recompensa Verde</strong> é transformar o modo como resíduos
+            recicláveis são gerenciados e
+            valorizados em Belo Horizonte, promovendo uma economia circular sustentável. A plataforma busca conectar
+            empresas geradoras de resíduos às que podem reaproveitá-los, criando uma rede eficiente para o comércio de
+            materiais recicláveis, como plásticos e lixo eletrônico. Além de reduzir o impacto ambiental causado pelo
+            descarte inadequado, o <strong>Recompensa Verde</strong> incentiva práticas empresariais responsáveis,
+            gerando benefícios
+            econômicos e sociais.
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;Ao fomentar o reaproveitamento de recursos, a plataforma não só contribui para a
+            preservação ambiental, mas também fortalece a economia local, transformando desafios relacionados à gestão
+            de resíduos em oportunidades de crescimento e inovação.
+          </p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-2">
+        <h1>SUSTENTABILIDADE</h1>
+      </section>
+      <section class="module content">
+        <div class="container">
+          <h2>BENÉFICIOS PARA A SOCIEDADE</h2>
+          <p>&nbsp;&nbsp;&nbsp;O software <strong>Recompensa Verde</strong> oferece inúmeros benefícios para a
+            sustentabilidade e a
+            economia local. Ele
+            conecta empresas que geram resíduos recicláveis às que os utilizam como matéria-prima, promovendo a economia
+            circular. Com funcionalidades que permitem negociar preços, gerenciar espaços de coleta e acompanhar
+            transações, o <strong>Recompensa Verde</strong> reduz impactos ambientais como poluição e descarte
+            inadequado. Além disso,
+            incentiva práticas empresariais sustentáveis, agregando valor econômico às partes envolvidas. Em Belo
+            Horizonte, onde o manejo de resíduos plásticos e lixo eletrônico é um desafio, a solução otimiza o
+            reaproveitamento desses materiais.
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;Ao monitorar dados sobre geração e comercialização, o software facilita a reciclagem e
+            estimula a
+            responsabilidade ambiental, contribuindo para uma gestão de resíduos mais eficiente e alinhada às
+            necessidades locais.
+          </p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-3" id="indicadores">
+        <h1>POR UM MUNDO MELHOR</h1>
+      </section>
+      <section class="module content">
+        <div class="container">
+          <h2>INDICADORES DA NOSSA COLABORAÇÃO</h2>
+          <p>&nbsp;&nbsp;&nbsp;Os indicadores do <strong>Recompensa Verde</strong> foram desenvolvidos para medir o impacto positivo da plataforma em
+            termos ambientais e econômicos. O <strong>Volume de Materiais Reciclados</strong> acompanha a quantidade total de
+            resíduos negociados na plataforma, proporcionando uma visão clara do avanço na reciclagem e reaproveitamento
+            de recursos. Já o indicador de <strong>Redução de Resíduos em Aterros</strong> avalia o impacto direto do desvio de
+            materiais recicláveis, como plásticos e lixo eletrônico, dos aterros sanitários. Isso contribui para
+            minimizar os problemas ambientais, como a contaminação do solo e a emissão de gases de efeito estufa,
+            promovendo uma gestão mais sustentável dos resíduos. 
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;Com esses indicadores, o <strong>Recompensa Verde</strong> oferece
+            às empresas uma ferramenta prática para monitorar suas práticas sustentáveis e incentivar melhorias
+            contínuas na cadeia de reciclagem.
+          </p>
+        </div>
+      </section>
+
+      <div id="indicador1">
+        <h2>VOLUME DE MATERIAS RECICLADOS MENSALMENTE</h2>
+        <canvas id="indicatorChart"></canvas>
+      </div>
+
+      <div id="indicadoresPizza">
+        <div class="graficos">
+          <div class="indicador">
+            <h2>CONTRIBUIÇÃO À RECICLAGEM EM BH</h2>
+            <canvas id="graficoPizza"></canvas>
+          </div>
+          <div class="indicador">
+            <h2>TAXA DE NEGOCIAÇÃO EFETIVADA (MÊS)</h2>
+            <canvas id="graficoPizza2"></canvas>
+          </div>
+        </div>
+      </div>
+      
+
+    </main>
+  </div>
+  <footer>
+    <div class="foot">&copy; 2024 Recompensa Verde. Todos os direitos reservados.</div>
+</footer>
+
+  <script src="../js/sobre&Indicadores.js"></script>
+  <script src="../js/navbarGlobal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

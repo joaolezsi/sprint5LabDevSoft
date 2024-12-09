@@ -1,0 +1,23 @@
+{
+    "empresa": {
+      "nome": "",
+      "cnpj": "",
+      "cidade": "",
+      "bairro": "",
+      "numero": "",
+      "cep": "",
+      "senha": "",
+      "tipoCadastro": ""
+    },
+    "opcoesTipoCadastro": [
+      {
+        "tipo": "Empresa Parceira",
+        "descricao": "Cadastre sua empresa para comprar materiais recicláveis. Conforme avança nas compras dentro da plataforma, você ganha níveis e benefícios. Assim, torna-se ainda mais vantajoso reciclar."
+      },
+      {
+        "tipo": "Ponto de Coleta",
+        "descricao": "Cadastre sua empresa para vender materiais recicláveis. Ao utilizar a plataforma, você obtém níveis e benefícios com o volume de vendas, tornando o processo de reciclagem ainda mais lucrativo e eficiente."
+      }
+    ]
+  }
+  

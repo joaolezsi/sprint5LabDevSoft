@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    text-decoration: none;
+    background-color: #f6f6f6;
+    height: 95vh;
+    min-width: 710px;
+}
+
+body nav{
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 4px rgb(125, 125, 125);
+}
+
+#botao_pesquisar {
+    color: white;
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+#botao_pesquisar:hover{
+    background-color: #4dc050
+}
+
+.titulo h4, h4 {
+    padding: 20px;
+    color: #333;
+}
+
+.titulo{
+    background-color: lightgray;
+    font-size: 30px;
+}
+
+#lista_proposta{
+    text-decoration: none;
+    list-style: none;
+}
+
+.enviar{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-left: 2.5%;
+    border-color: lightgray;
+    box-shadow: 1px 1px 4px  rgb(174, 174, 174);
+}
+
+.recusar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .recusar i {
+    margin-right: 4px;
+  }
+
+  .aprovar {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .aprovar i {
+    margin-right: 4px;
+  }
+
+.editar {
+  background-color: green;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+
+  .editar i{
+    margin-right: 4px;
+    margin-left: 2px;
+  }
+
+  .container1 {
+    flex-direction: column; 
+    justify-content: center;
+    background-color: #f6f6f6;
+    border: 1px solid lightgray;
+    width: 80%;
+    margin: 0 auto; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px  rgb(174, 174, 174);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#listaHtml{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,7 @@
+.foot{
+    background-color: #4caf4f;
+    padding: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,39 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Recompensa Verde
+authors:
+  - family-names: Da Silva
+    given-names: Jonathan Sena
+  - family-names: Pereira
+    given-names: Víctor Gabriel Cruz
+  - family-names: Rodrigues
+    given-names: Wesley Filemon Rocha
+  - family-names: Marinho
+    given-names: Vitor Hugo Dutra
+  - family-names: Ferreira
+    given-names: Daniel Vieira Veríssimo de Carvalho
+  - family-names: Fernandes
+    given-names: João Pedro Lezsi
+  - family-names: Pires
+    given-names: Pedro Farias
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Neto
+    given-names: Cristiano de Macêdo
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: De Brito
+    given-names: Aline Norberta
+  - name-suffix: Professora
+    affiliation: PUC Minas
+    family-names: Amaral
+    given-names: Cleia Marcia Gomes
+keywords:
+  - Reciclagem
+  - Economia sustentável
+  - Economia circular
+  - Reaproveitamento
+repository-code: 
+license: CC-BY-4.0
+version: 1.0.0
+date-released:

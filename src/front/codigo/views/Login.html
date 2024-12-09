@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/login.css">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" padding: 0;margin:0;box-sizing: border-box;"  >
+      <div class="container-fluid" style="background-color: white;">
+        <a class="navbar-brand" style="color: #4caf4f; font-weight: bold; margin-left: 120px; font-size: 25px;" href="../views/paginaInicial.html"><img src="../assets/img/logo.png" alt="" style="height: 50px;width: 50px;">Recompensa Verde</a>
+      </div>
+  </nav>
+      
+      <div id="alerta" class="alert-container"></div>
+
+    <div class="cadastro">
+      <div class="modal_cadastro">
+        <img src="../assets/img/acesso.jpeg" alt="" class="imagem_inicial">
+
+        <div class="cadastro_inputs">
+
+          <div class="tituloLogin">
+          <h1 class="title_cadastro">Login</h1>
+        </div>
+
+        <div class="naoCadastrado">
+          <a href="cadastro.html" id="novoUsuario">Novo no site? Registre-se</a>
+        </div>
+
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="input_email_label">E-mail</span>
+            <input type="text" class="form-control" id="input_email_login" aria-label="E-mail">
+          </div>
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text">Senha</span>
+            <input type="password" class="form-control" placeholder="Digite a senha" id="input_senha_login" aria-label="Senha">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text"><input type="checkbox" class="checkboxs "  id="checkbox_empresa_compradora"> Empresa Parceira</span>
+            <span class="input-group-text"><input type="checkbox" class="checkboxs " id="checkbox_empresa_vendedora"> Ponto de Coleta</span>
+          </div>
+
+            <div class="recuperarSenha">
+              <a href="" id="esqueceuSenha">Esqueceu a senha?</a>
+            </div>
+
+            <div class="botao_Login">
+                <button type="button" class="btn btn-primary btn-lg" id="botao_login">Continuar</button>
+            </div>
+           
+        
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

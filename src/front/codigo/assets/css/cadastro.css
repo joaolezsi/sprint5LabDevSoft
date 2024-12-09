@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: #f6f6f6;
+    height: 95vh;
+    min-width: 710px;
+}
+body nav{
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 4px rgb(125, 125, 125);
+}
+
+#botao_pesquisar {
+    color: white;
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+#botao_pesquisar:hover{
+    background-color: #4dc050
+}
+
+.cadastro{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.modal_cadastro{
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 0.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 600px;
+    align-items: center;
+    border-left: 15px solid #4caf4f;
+    box-shadow: 1px 1px 4px  rgb(174, 174, 174);
+}
+
+.imagem_inicial{
+    height: 60vh;
+    width: 70vh;
+}
+
+.cadastro_inputs{
+padding: 5px;
+}
+.cadastro_inputs h1{
+    color: #4caf4f;
+}
+
+/* Titulo cadastro principal */
+.title_cadastro{
+font-weight: 700;
+}
+
+/* inputs */
+.input-group{
+    margin: 10px;
+}
+
+/* Botão abrir modal de seleção de titulo */
+#botaoModal{
+    margin-left: 10px;
+    color: #000000;
+    background-color: #f8f9fa;
+    border:1px solid #d7d7d7;
+    transition: 0.6s;
+}
+
+#botaoModal:hover{
+    background-color: white;
+    border:1px solid #4caf4f;
+}
+
+
+/* Botão cadastro principal */
+.botao_cadastro{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Botão cadastro principal */
+.botao_cadastro button{
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+
+/* Animação Botão cadastro principal */
+.botao_cadastro button:hover{
+    background-color: #4dc050
+}
+
+
+
+
+
+
+
+
+/* Modal de seleção de tipo de cadastro */
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal-title{
+    font-weight: 600;
+}
+
+/* Cards do modal de tipo de cadastro */
+.modal-body .card{
+    width: 500px; 
+     height: 600px;
+     border-left: 10px solid #4caf4f;
+     box-shadow: 1px 1px 4px  rgb(174, 174, 174);
+     transition: 0.6s;
+}
+
+/* Animação de quando passa o mouse no card */
+.modal-body .card:hover{
+    transform: scale(1.02);
+     
+}
+
+/* Imagem do card */
+.modal-body .card img{
+height: 300px;
+width: 100%;
+}
+
+/* Background do  Modal de seleção */
+.modal-content{
+    background-color: #f6f6f6;
+}
+
+/* Texto do card */
+.card-body{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Titulo do card */
+.card-body h1{
+font-size: 30px;
+}
+
+/* Checkbox da seleção */
+.input_tipo{
+    display: none;
+}
+/* Botão do card */
+.modal-body a{
+    background-color: #4caf4f;
+    border: #4caf4f;
+    align-self: flex-end;
+}
+
+/* Background do  Modal de seleção */
+.modal-body a:hover{
+    background-color: #4dc050;
+}
+
+/* Botão de salvar Modal de seleção */
+.modal-footer .btn-primary{
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+
+.modal-footer .btn-primary:hover{
+    background-color: #4dc050;
+}
+
+
+.alert-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: none; /* Escondido por padrão */
+  }
+  
+  .alert {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza o conteúdo verticalmente */
+    text-align: center;      /* Garante que o texto esteja centralizado */
+    flex-direction: row;     /* Mantém o ícone e texto na mesma linha */
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 5px;
+  }
+  
+  .alert svg {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    width: 24px;
+    height: 24px;
+  }
+  
+  .alert .alert-message {
+    flex-grow: 1; /* Permite que o texto ocupe o restante do espaço */
+  }
+  
+
+
+@media (max-width:1650px){
+
+
+    .modal_cadastro{
+        height: 570px;
+    }
+
+    .modal-body{
+    height: 700px;
+    
+    }
+
+    .imagem_inicial{
+        height: 65vh;
+        width: 75vh;
+        margin: 0 auto;
+    }
+    /* Cards do modal de tipo de cadastro */
+.modal-body .card{
+    margin: 30px;
+    width: 400px; 
+     height: 500px;
+}
+
+/* Imagem do card */
+.modal-body .card img{
+    height: 250px;
+    width: 100%;
+    }
+
+
+.modal_cadastro{
+    margin: 30px;
+}
+
+@media (max-width:1150px){
+.modal_cadastro{
+    height: 600px;
+}
+}
+
+}
+
+@media (min-width:880px) and (max-width:980px){
+
+    body{
+        min-width: 713px;
+    }
+
+    .modal_cadastro{
+        margin: 30px;
+        height: 600px;
+    }
+    
+    .imagem_inicial{
+        height: 50vh;
+        width: 40vh;
+    }
+}
+
+@media (min-width:751px) and (max-width:880px){
+
+    .modal_cadastro{
+        height: 600px;
+    }
+
+    .cadastro{
+    padding: 0;
+    margin: 0;
+    }
+
+    .modal_cadastro{
+        margin: 30px;
+    }
+
+   
+
+    .imagem_inicial{
+        height: 50vh;
+        width: 40vh;
+    }
+
+
+
+/* Cards do modal de tipo de cadastro */
+.modal-body .card{
+    margin: 50px;
+    width: 60%; 
+    
+}
+
+
+/* Modal de seleção de tipo de cadastro */
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+}
+
+
+
+@media (max-width:750px){
+
+
+.modal_cadastro{
+    margin: 0px;
+    border: none;
+    height: 100%;
+    box-shadow: none;
+}
+
+
+.modal_cadastro h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cadastro_inputs{
+    width: 200%;
+    padding: 5px;
+}
+
+/* Imagem do modal de cadastro */
+.imagem_inicial{
+    display: none;
+}
+
+/* Modal de seleção de tipo de cadastro */
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Cards do modal de tipo de cadastro */
+.modal-body .card{
+    margin: 50px;
+    width: 90%; 
+    height: 700px;
+    
+}
+
+}

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerPrincipal {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    background-color: #f4f4f9;
+    height: 100vh;
+}
+
+.barra-lateral{
+    background-color: #28a745;
+    height: 100%;
+
+    color: #fff;
+    font-weight:  bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.barra-lateral h1 {
+    color: #ffffff;
+    font-weight: Bold;
+    font-size: 30px;
+    text-overflow:unset;
+    padding: 20px;
+}
+.barra-lateral p{
+
+    width: 100%;
+    padding: 20px;
+}
+.barra-lateral p:hover{
+    background-color: #50a262;
+
+
+}
+
+/* Estilo da mensagem central */
+.container .mensagem {
+    display: none; /*  oculta a mensagem */
+    text-align: center;
+    font-size: 20px;
+    color: #777;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    height: 550px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    color: #070707;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+    text-align: left;
+}
+
+.select-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    top: 100px;
+}
+.select-btn:hover {
+    background-color: #218838;
+}

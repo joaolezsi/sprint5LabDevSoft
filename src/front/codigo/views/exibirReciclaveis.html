@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais Recicláveis Disponíveis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/exibirReciclaveis.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" padding: 0;margin:0;box-sizing: border-box;"  >
+        <div class="container-fluid" style="background-color: white;">
+            <a class="navbar-brand" style="color: #4caf4f; font-weight: bold; margin-left: 120px; font-size: 25px;" href="../views/paginaInicial.html"><img src="../assets/img/logo.png" alt="" style="height: 50px;width: 50px;">Recompensa Verde</a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; justify-content: flex-end;">
+               
+                <!-- Parte dinâmica para mostrar login/cadastro ou dropdown -->
+                <div id="auth-section" >
+                    <!-- Se o usuário estiver logado, exibe a foto do perfil -->
+                    <div class="dropdown d-none" id="user-dropdown" >
+                        <img src="../assets/img/user.png" class="rounded-circle" width="45" height="45" 
+                            id="profileDropdown" role="button" data-bs-toggle="dropdown" alt="Perfil" style="margin-right: 170px;">
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown" style="margin-right: 100px;">
+                            <li><a class="dropdown-item" href="../views/perfil.html">Perfil</a></li>
+                            <li><a class="dropdown-item" href="../views/sobre&Indicadores.html">Sobre nós</a></li>
+                            <li><a class="dropdown-item" id="exibirReciclaveis" href="../views/exibirReciclaveis.html">Comprar Recicláveis</a></li>
+                            <li><a class="dropdown-item" id="cadastrarReciclaveis" href="../views/cadastroDeReciclaveis.html">Cadastro de  Recicláveis</a></li>
+                            <li><a class="dropdown-item" id="receberSolicitacao" href="../views/recebeSolicitacao.html">Solicitação de Pedidos</a></li>
+                            <li><a class="dropdown-item" id="receberProposta" href="../views/RecebimentoProposta.html">Pedidos em negociação</a></li>
+                            <li><a class="dropdown-item" id="enviarProposta" href="../views/EnvioProposta.html">Pedidos em negociação</a></li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" id="logout" href="#">Sair</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Se o usuário não estiver logado, exibe os botões -->
+                    <div id="auth-buttons" style="margin-right: 100px;">
+                        <a href="../views/Login.html" class="btn btn-outline-primary me-2" style="color: #4caf4f;border: 1px solid #4caf4f; background-color: white;">Entrar</a>
+                        <a href="../views/cadastro.html" class="btn btn-primary" style="color: white;border: #4caf4f;background-color: #4caf4f;">Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="containerPrincipal">
+   
+        <div class="barra-lateral">
+            <h1><i class="fa-solid fa-recycle"></i> Produtos:</h1>
+            <p onclick="listarPlastico()">
+                <i class="fa-solid fa-bottle-water" style="margin-right: 8px;"></i> Plástico
+            </p>
+            <p onclick="listarEletronico()">
+                <i class="fa-solid fa-computer" style="margin-right: 8px;"></i> Lixo Eletrônico
+            </p>
+            <p onclick="listarAluminio()">
+                <i class="fa-solid fa-coins" style="margin-right: 8px;"></i> Metal
+            </p>
+            <p onclick="listarPorPreco()">
+                <i class="fa-solid fa-credit-card" style="margin-right: 8px;"></i> Preço
+            </p>
+        </div>
+
+        <div id="reciclaveis-container" class="container">
+            <!-- Materiais ou mensagem serão exibidos aqui -->
+        </div>
+</div>
+    <script src="../js/exibirReciclaveis.js"></script>
+    <script src="https://kit.fontawesome.com/2a003e0b74.js" crossorigin="anonymous"></script>
+    <script src="../js/navbarGlobal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

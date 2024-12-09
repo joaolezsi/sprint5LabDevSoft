@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: #f6f6f6;
+    height: 90vh;
+}
+body nav{
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 4px rgb(125, 125, 125);
+}
+
+#botao_pesquisar {
+    color: white;
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+#botao_pesquisar:hover{
+    background-color: #4dc050
+}
+
+.cadastro{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.modal_cadastro{
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 0.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    margin: auto;
+    height: 80%;
+    align-items: center;
+    border-left: 15px solid #4caf4f;
+    box-shadow: 1px 1px 4px  rgb(174, 174, 174);
+}
+
+.imagem_inicial{
+    height: 60vh;
+    width: 70vh;
+}
+
+.cadastro_inputs{
+padding: 5px;
+}
+.cadastro_inputs h1{
+    color: #4caf4f;
+}
+
+/* Titulo Realizar seu login */
+.title_cadastro{
+font-weight: 700;
+}
+
+/* inputs */
+.input-group{
+    margin: 10px;
+}
+
+
+#botaoModal:hover{
+    background-color: white;
+    border:1px solid #4caf4f;
+}
+
+/* Container para os dois botões */
+.container_Botoes {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os botões */
+    align-items: center;
+    width: 100%; /* Defina a largura do container  */
+    gap: 10px; /* Espaço entre os botões  */
+}
+
+/* Estilos Botão Login principal */
+.botao_Login button {
+    background-color: #4caf4f;
+    border: #4caf4f;
+
+}
+
+/* Animação Botão Login principal */
+.botao_Login button:hover {
+    background-color: #4dc050;
+}
+
+/* Estilos Botão Recuperar Senha */
+.botao_RecuperarSenha button {
+    background-color: #4caf4f;
+    border: #4caf4f;
+    padding: 10px 20px; /* Tamanho do botão */
+}
+
+/* Animação Botão Recuperar Senha */
+.botao_RecuperarSenha button:hover {
+    background-color: #4dc050;
+}
+
+
+
+.alert-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: none; /* Escondido por padrão */
+  }
+  
+  .alert {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza o conteúdo verticalmente */
+    text-align: center;      /* Garante que o texto esteja centralizado */
+    flex-direction: row;     /* Mantém o ícone e texto na mesma linha */
+    padding: 10px;
+    padding-right: 50px;
+    border-radius: 5px;
+  }
+  
+  .alert svg {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    width: 24px;
+    height: 24px;
+  }
+  
+  .alert .alert-message {
+    flex-grow: 1; /* Permite que o texto ocupe o restante do espaço */
+  }
+
+  .recuperarSenha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .recuperarSenha a{
+    color: gray;
+    margin-left: 20px;
+  }
+
+  .botao_Login{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+  }
+
+  .tituloLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tituloLogin h1{
+    font-weight: bold;
+    font-size: 60px;
+  }
+
+.naoCadastrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.naoCadastrado a{
+    color: gray;
+    margin-left: 20px;
+}
+.checkboxs{
+    border-radius: 10%;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}

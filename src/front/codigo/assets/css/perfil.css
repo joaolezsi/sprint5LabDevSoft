@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+    height: 100%;
+}
+
+body nav{
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 4px rgb(125, 125, 125);
+}
+
+#botao_pesquisar {
+    color: white;
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+#botao_pesquisar:hover{
+    background-color: #4dc050
+}
+
+.container_global{
+    display: grid;
+    grid-template-columns: 1.2fr 3fr;
+    height: 100%;
+}
+
+
+/* Container 1 configurações */
+.container1{
+    display: flex;
+    justify-content: center;
+}
+
+.perfil{
+    background-color: #f6f6f6;
+    width: 350px;
+    height: 400px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 4px  rgb(174, 174, 174);
+    border-left: 15px solid #4caf4f;
+}
+.perfil img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+}
+.perfil h5{
+    color: #4caf4f;
+}
+
+/* Container 2 configurações */
+.container2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.dados_user{
+    background-color: #f6f6f6;
+    width: 90%;
+    height: 95%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 4px  rgb(174, 174, 174);
+    border-left: 15px solid #4caf4f;
+}
+.dados_user h2{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.cadastro_inputs{
+    margin-top: 30px;
+}
+.input-group{
+    margin: 20px;
+    max-width: 95%;
+}
+
+.botoes_perfil{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.botao_editar{
+    background-color: #4caf4f;
+    border: #4caf4f;
+    margin-left: 20px;
+}
+
+#botao_cancelar{
+    background-color: red;
+    border: red;
+    margin-left: 20px;
+}
+
+#botao_excluir{
+    background-color: red;
+    border: red;
+    margin-left: 20px;
+}
+
+/* Animação Botão cadastro principal */
+#botao_editar:hover{
+    background-color: #4dc050
+}
+
+#botao_excluir:hover{
+    background-color: rgb(247, 73, 73);
+}
+
+
+.modal-body .input-group{
+    max-width: 90%;
+    margin: 20px;
+    margin-left: 5%;
+
+}
+
+#salvar_edicao{
+    background-color: #4caf4f;
+    border: #4caf4f;
+}
+#salvar_edicao:hover{
+    background-color: #4dc050
+}
+
+@media (max-width:1000px){
+    .container_global{
+        grid-template-columns: 1fr;
+    }
+}
